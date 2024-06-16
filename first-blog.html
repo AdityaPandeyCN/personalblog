@@ -12,9 +12,16 @@
 
     <link rel="stylesheet" type="text/css" href="./theme/stylesheet/style.min.css">
 
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+          media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
+    href="./theme/stylesheet/dark-theme.min.css">
 
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
+          href="./theme/pygments/monokai.min.css">
     <link id="pygments-light-theme" rel="stylesheet" type="text/css"
-          href="./theme/pygments/default.min.css">
+              media="(prefers-color-scheme: light)"
+          href="./theme/pygments/emacs.min.css">
 
 
 
@@ -63,7 +70,7 @@
 
 
 </head>
-<body class="light-theme">
+<body >
 
 <aside>
   <div>
@@ -100,17 +107,10 @@
 
     <ul class="social">
       <li>
-        <a class="sc-fa-Github"
+        <a class="sc-Github"
            href="https://github.com/AdityaBITMESRA"
            target="_blank">
-          <i class="fa-brands fa-fa-Github"></i>
-        </a>
-      </li>
-      <li>
-        <a class="sc-Another social link"
-           href="#"
-           target="_blank">
-          <i class="fa-brands fa-Another social link"></i>
+          <i class="fa-brands fa-Github"></i>
         </a>
       </li>
     </ul>
@@ -161,6 +161,14 @@
 <p>&copy;  </p>
 <p>
 Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+  <span class="footer-separator">|</span>
+  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
+  <script id="dark-theme-script"
+          src="./theme/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="True"
+          data-default-theme="dark"
+          type="text/javascript">
+  </script>
 </p></footer>  </main>
 
 <script type="application/ld+json">
