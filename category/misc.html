@@ -153,28 +153,28 @@
   </header>
   <div>
       <div><style>
-.gsoc-hero {
-    position: relative;
-    text-align: center;
-    margin: 40px 0;
-    padding: 20px;
-}
-
 .floating-image {
     max-width: 400px;
     width: 100%;
+    display: block;
+    margin: 30px auto;
     border-radius: 15px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     animation: float 3s ease-in-out infinite;
     transition: transform 0.3s ease;
 }
 
 .floating-image:hover {
-    transform: scale(1.05) rotateY(5deg);
+    transform: scale(1.05);
 }
 
 @keyframes float {
-    0%, 100% { transform …</style></div>
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+}
+</style>
+
+<p>This …</p></div>
         <br>
         <a class="btn"
            href="https://adityapandeycn.github.io/personalblog/gsoc-2025-with-cern-hsf-and-compiler-research-team#gsoc-2025-with-cern-hsf-and-compiler-research-team">

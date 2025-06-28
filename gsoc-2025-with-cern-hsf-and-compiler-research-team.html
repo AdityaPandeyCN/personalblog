@@ -54,13 +54,13 @@
  
 
 <meta name="author" content="Aditya Pandey" />
-<meta name="description" content=".gsoc-hero { position: relative; text-align: center; margin: 40px 0; padding: 20px; } .floating-image { max-width: 400px; width: 100%; border-radius: 15px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); animation: float 3s ease-in-out infinite; transition: transform 0.3s ease; } .floating-image:hover { transform: scale(1.05) rotateY(5deg); } @keyframes float { 0%, 100% { transform …" />
+<meta name="description" content=".floating-image { max-width: 400px; width: 100%; display: block; margin: 30px auto; border-radius: 15px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); animation: float 3s ease-in-out infinite; transition: transform 0.3s ease; } .floating-image:hover { transform: scale(1.05); } @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-15px); } } This …" />
 <meta name="keywords" content="GSoC">
 
 
   <meta property="og:site_name" content="Aditya's Blog"/>
   <meta property="og:title" content="GSoC 2025 with CERN-HSF and Compiler Research Team"/>
-  <meta property="og:description" content=".gsoc-hero { position: relative; text-align: center; margin: 40px 0; padding: 20px; } .floating-image { max-width: 400px; width: 100%; border-radius: 15px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); animation: float 3s ease-in-out infinite; transition: transform 0.3s ease; } .floating-image:hover { transform: scale(1.05) rotateY(5deg); } @keyframes float { 0%, 100% { transform …"/>
+  <meta property="og:description" content=".floating-image { max-width: 400px; width: 100%; display: block; margin: 30px auto; border-radius: 15px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); animation: float 3s ease-in-out infinite; transition: transform 0.3s ease; } .floating-image:hover { transform: scale(1.05); } @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-15px); } } This …"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:url" content="https://adityapandeycn.github.io/personalblog/gsoc-2025-with-cern-hsf-and-compiler-research-team"/>
   <meta property="og:type" content="article"/>
@@ -161,50 +161,30 @@
 
   <div>
     <style>
-.gsoc-hero {
-    position: relative;
-    text-align: center;
-    margin: 40px 0;
-    padding: 20px;
-}
-
 .floating-image {
     max-width: 400px;
     width: 100%;
+    display: block;
+    margin: 30px auto;
     border-radius: 15px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     animation: float 3s ease-in-out infinite;
     transition: transform 0.3s ease;
 }
 
 .floating-image:hover {
-    transform: scale(1.05) rotateY(5deg);
+    transform: scale(1.05);
 }
 
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-}
-
-.gsoc-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 20px 30px;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
+    50% { transform: translateY(-15px); }
 }
 </style>
 
-<div class="gsoc-hero">
-    <img src="https://adityapandeycn.github.io/personalblog/images/gsoc2025.jpeg" alt="GSoC 2025" class="floating-image">
-</div>
-
-<p>This is about my experience in GSoC 2025 with CERN-HSF, working on genome sequencing applications using ROOT framework.</p>
+<p>This is about my experience in GSoC 2025 with CERN-HSF</p>
 <p>Check out <a href="https://adityapandeycn.github.io/personalblog/gsoc-cern-selection-blog-post">My GSoC 2025 Experience</a> for more content.</p>
+<p><img src="https://adityapandeycn.github.io/personalblog/images/gsoc2025.jpeg" alt="GSoC 2025" class="floating-image"></p>
   </div>
   <div class="tag-cloud">
     <p>
