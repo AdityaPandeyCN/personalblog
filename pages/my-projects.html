@@ -10,22 +10,24 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="..//stylesheet/style.min.css">
+    <link rel="stylesheet" type="text/css" href="https://adityapandeycn.github.io/personalblog//stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+    href="https://adityapandeycn.github.io/personalblog//stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+          href="https://adityapandeycn.github.io/personalblog//pygments/monokai.min.css">
 
 
-    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
-          href="..//pygments/emacs.min.css">
 
+  <link rel="stylesheet" type="text/css" href="https://adityapandeycn.github.io/personalblog//font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://adityapandeycn.github.io/personalblog//font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://adityapandeycn.github.io/personalblog//font-awesome/css/solid.css">
 
+  <link rel="stylesheet" type="text/css" href="https://adityapandeycn.github.io/personalblog/static/custom.css">
 
-  <link rel="stylesheet" type="text/css" href="..//font-awesome/css/fontawesome.css">
-  <link rel="stylesheet" type="text/css" href="..//font-awesome/css/brands.css">
-  <link rel="stylesheet" type="text/css" href="..//font-awesome/css/solid.css">
-
-  <link rel="stylesheet" type="text/css" href="../static/custom.css">
-
-  <link rel="shortcut icon" href="images/favicon1.png" type="image/x-icon">
-  <link rel="icon" href="images/favicon1.png" type="image/x-icon">
+  <link rel="shortcut icon" href="https://adityapandeycn.github.io/personalblog/images/favicon1.png" type="image/x-icon">
+  <link rel="icon" href="https://adityapandeycn.github.io/personalblog/images/favicon1.png" type="image/x-icon">
 
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#333333">
@@ -58,8 +60,8 @@
   <meta property="og:title" content="Aditya's Blog"/>
   <meta property="og:description" content=""/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:url" content=".."/>
-  <meta property="og:image" content="images/aditya1.png">
+  <meta property="og:url" content="https://adityapandeycn.github.io/personalblog"/>
+  <meta property="og:image" content="https://adityapandeycn.github.io/personalblog/images/aditya1.png">
 
 
 
@@ -67,19 +69,19 @@
 
 
 </head>
-<body class="light-theme">
+<body class="dark-theme">
 
 <aside>
   <div>
-    <a href="../">
-      <img src="images/aditya1.png" alt="Aditya Pandey" title="Aditya Pandey">
+    <a href="https://adityapandeycn.github.io/personalblog/">
+      <img src="https://adityapandeycn.github.io/personalblog/images/aditya1.png" alt="Aditya Pandey" title="Aditya Pandey">
     </a>
 
     <h1>
-      <a href="../">Aditya Pandey</a>
+      <a href="https://adityapandeycn.github.io/personalblog/">Aditya Pandey</a>
     </h1>
 
-    <p>Engineering && Computational Neuroscience</p>
+    <p>Low level Programming && Computational Neuroscience | Python • C++ • ROOT • Algorithms </p>
 
 
     <nav>
@@ -88,13 +90,13 @@
 
             <li>
               <a target="_self"
-                 href="../pages/about-me#about-me">
+                 href="https://adityapandeycn.github.io/personalblog/pages/about-me#about-me">
                 About Me
               </a>
             </li>
             <li>
               <a target="_self"
-                 href="../pages/my-projects#my-projects">
+                 href="https://adityapandeycn.github.io/personalblog/pages/my-projects#my-projects">
                 My Projects
               </a>
             </li>
@@ -131,7 +133,7 @@
   <main>
 
 <nav>
-  <a href="../">Home</a>
+  <a href="https://adityapandeycn.github.io/personalblog/">Home</a>
 
   <a href="archives.html">Archives</a>
   <a href="categories.html">Categories</a>
@@ -146,12 +148,248 @@
     <h1 id="my-projects">My Projects</h1>
   </header>
   <div>
-<h2>Aditya Pandey</h2>
-<hr>
-<h2>Shoot me an email</h2>
-<blockquote>
-<p><em>adityapand3y666@gmail.com</em></p>
-</blockquote>  </div>
+<style>
+.projects-container {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.project-card {
+   border: 2px solid #2ecc71;
+   border-radius: 8px;
+   padding: 15px;
+   margin: 10px;
+   transition: transform 0.3s ease;
+   background-color: #000000;
+}
+
+.project-card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.project-card h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+.project-card summary {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.project-card p {
+    font-size: 0.95em;
+    margin: 10px 0;
+}
+
+.project-card ul {
+    font-size: 0.9em;
+}
+
+.project-card li {
+    margin-bottom: 5px;
+}
+
+.tag {
+   display: inline-block;
+   padding: 3px 8px;
+   border-radius: 15px;
+   background-color: #3498db;
+   color: white;
+   margin: 2px;
+   font-size: 0.8em;
+}
+
+.skills-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(26, 26, 26, 0.4);
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.skills-section h3 {
+    font-size: 1.3em;
+    color: #2ecc71;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #2ecc71;
+    padding-bottom: 8px;
+}
+
+.skills-section p {
+    font-size: 0.95em;
+    margin: 15px 0 8px 0;
+}
+
+.skills-section ul {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.skills-section li {
+    margin-bottom: 4px;
+}
+</style>
+
+<div class="projects-container">
+
+<div class="container">
+<div class="row">
+
+<div class="col-md-6 project-card">
+<h2>Algorithm</h2>
+
+<details>
+
+<summary><b>Rubik's Cube Solver</b></summary>
+<img src="rubiks-cube.jpg" alt="Rubik's Cube Solver Image" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+
+<p><strong>Technologies Used</strong></p>
+<span class="tag">C++</span> 
+<span class="tag">Data Structures</span>
+<span class="tag">Algorithms</span>
+
+<p><strong>Features</strong></p>
+<ul>
+  <li>Solving time < 3s for 8 moves</li>
+  <li>Multiple algorithms: BFS, DFS, IDDFS</li>
+  <li>IDA* implementation</li>
+  <li>3x3 cube modeling</li>
+</ul>
+
+<a href="https://github.com/AdityaPandeyCN/rubikscube-solver" target="_blank">
+  <img src="https://img.shields.io/badge/View_Project-GitHub-blue?style=for-the-badge&logo=github">
+</a>
+</details>
+</div>
+
+<div class="col-md-6 project-card">
+<h2>Machine Learning</h2>
+
+<details>
+<summary><b>DNA Classification</b></summary>
+
+<p><strong>Technologies Used</strong></p>
+<span class="tag">Python</span> 
+<span class="tag">KNN</span> 
+<span class="tag">SVM</span>
+
+<p><strong>Features</strong></p>
+<ul>
+  <li>UCI Molecular Biology Dataset</li>
+  <li>Text to numerical conversion</li>
+  <li>Gene sequence classification</li>
+</ul>
+
+<a href="https://github.com/AdityaPandeyCN/DNA-CLASSIFICATION" target="_blank">
+  <img src="https://img.shields.io/badge/View_Project-GitHub-blue?style=for-the-badge&logo=github">
+</a>
+
+</details>
+
+<details>
+<summary><b>Breast Cancer Detection</b></summary>
+
+<p><strong>Technologies Used</strong></p>
+<span class="tag">Python</span> 
+<span class="tag">Machine Learning</span> 
+<span class="tag">Data Analysis</span>
+
+<p><strong>Features</strong></p>
+<ul>
+  <li>UCI cell dataset analysis</li>
+  <li>Binary classification</li>
+  <li>KNN & SVM implementation</li>
+</ul>
+
+<a href="https://github.com/AdityaPandeyCN/Breast-Cancer-detection" target="_blank">
+  <img src="https://img.shields.io/badge/View_Project-GitHub-blue?style=for-the-badge&logo=github">
+</a>
+</details>
+</div>
+
+</div>
+
+<div class="col-md-6 project-card">
+<h2>Programming Fundamentals</h2>
+
+<details>
+
+<summary><b>Web-Socket-Server</b></summary>
+
+<p><strong>Technologies Used</strong></p>
+<span class="tag">HTML</span> 
+<span class="tag">JavaScript</span>
+<span class="tag">Socket.IO</span>
+
+<p><strong>Features</strong></p>
+<ul>
+  <li>Real-time bidirectional communication</li>
+</ul>
+
+<a href="https://github.com/AdityaPandeyCN/Web-socket-server" target="_blank">
+  <img src="https://img.shields.io/badge/View_Project-GitHub-blue?style=for-the-badge&logo=github">
+</a>
+</details>
+</div>
+
+<div class="col-md-6 project-card">
+  <h2>Game Development</h2>
+  <details>
+    <summary><b>Rust Starship Game</b> <span style="color: orange;">(In Progress)</span></summary>
+
+    <p><strong>Technologies Used</strong></p>
+    <span class="tag">Rust</span> 
+    <span class="tag">Game Development</span>
+
+    <p><strong>Features (Planned/Ongoing)</strong></p>
+    <ul>
+      <li>2D Space Shooter Mechanics</li>
+      <li>Complex Game Logic in Rust</li>
+    </ul>
+
+    <p><strong>Current Development Status</strong></p>
+    <ul>
+      <li>Core Game Mechanics Prototype</li>
+      <li>Ongoing Gameplay Refinement</li>
+    </ul>
+
+    <a href="https://github.com/AdityaPandeyCN/Star-ship_game" target="_blank">
+      <img src="https://img.shields.io/badge/View_Project-GitHub-blue?style=for-the-badge&logo=github">
+    </a>
+  </details>
+</div>
+
+<div class="skills-section">
+<h3>Technical Skills</h3>
+
+<p><strong>Programming Languages</strong></p>
+<ul>
+  <li>C++</li>
+  <li>Python</li>
+  <li>GoLang</li>
+  <li>JavaScript</li>
+  <li>Rust</li>
+</ul>
+
+<p><strong>Frameworks & Tools</strong></p>
+<ul>
+  <li>Scikit-learn</li>
+  <li>Data Structures</li>
+  <li>Algorithm Design</li>
+</ul>
+
+<p><strong>Core Competencies</strong></p>
+<ul>
+  <li>Machine Learning</li>
+  <li>Algorithm Optimization</li>
+  <li>Data Analysis</li>
+</ul>
+</div>
+
+</div>  </div>
 </article>
 
 <footer>
@@ -165,8 +403,8 @@ Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a 
   "@context" : "http://schema.org",
   "@type" : "Blog",
   "name": " Aditya's Blog ",
-  "url" : "..",
-  "image": "images/aditya1.png",
+  "url" : "https://adityapandeycn.github.io/personalblog",
+  "image": "https://adityapandeycn.github.io/personalblog/images/aditya1.png",
   "description": ""
 }
 </script><a href="https://github.com/AdityaPandeyCN" target="_blank" class="github-corner" aria-label="View source on Github">
